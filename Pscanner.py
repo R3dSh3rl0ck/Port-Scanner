@@ -19,7 +19,7 @@ init(autoreset=True)
 def scan_all(target):
     # converted ip
     converted_target = ip_domain(target)
-    # Target with Red color
+    # Target with Red color# Minimum port number
     print('\n' + Fore.RED + '[+] Scanning Target : ' + str(target))
     # enter a valid port range. check!
     while True:
@@ -28,7 +28,10 @@ def scan_all(target):
         if port_range_valid:
             port_min = int(port_range_valid.group(1))
             port_max = int(port_range_valid.group(2))
-            break
+            if (port_min > 0 and port_max <= 65535) and (port_max > port_min):
+                break
+            else:
+                print(Fore.RED + 'Please enter valid limits of the port range!\n')
     # scan every port
     # Multithreading programming for speed. (100 threads very fast results) (change it to your needs)
     with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
@@ -47,7 +50,7 @@ def ip_domain(target):
 
 # Create socket for connection!
 def scan(target, port):
-    lock = threading.Lock
+    lock = threading.Lock()
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # it take 0.5 secs to connect to a port !
@@ -91,10 +94,6 @@ if __name__ == '__main__':
     # threading lock . Not different threads prints same stuff! lock = threading.Lock()
     # special format for ports.
     port_valid = re.compile("([0-9]+)-([0-9]+)")
-    # Minimum port number
-    port_min = 0
-    # Maximum port number
-    port_max = 65535
     # Run forever except exit!
     while True:
         # IP
