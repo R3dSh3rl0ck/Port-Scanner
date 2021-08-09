@@ -75,7 +75,7 @@ def get_banner(s):
     return data
 
 
-# Main!
+# Main Program.
 if __name__ == '__main__':
     print(r"""~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~          
 *             _____   ____     ____     ____                  #
