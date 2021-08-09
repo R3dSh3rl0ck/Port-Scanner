@@ -6,7 +6,7 @@
                      * Execution via terminal python3 Pscanner.py
                      * Execution via CMD python Pscanner.py
                     
-# Genereal Inforamtios!
+# Genereal Informations!
 * The program uses threading programming for speed.Concretely a threadpoolexecutor (max workers = 100..Change the number to your needs maybe is great enough).
 * For the IPy library --> Use a terminal | Cmd and type(command) [--> pip3 install IPy(if you don not have pip installed --> sudo apt install python3-pip (Debian)]
                                                                 [--> pip install IPy --> python get-pip.py (Windows)]
