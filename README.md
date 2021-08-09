@@ -1,3 +1,4 @@
+
 # Port-Scanner in Python
 
 # Main!
@@ -14,3 +15,5 @@
 * For colorama Library --> pip install colorama (Windows) , pip3 install colorama (Debian).                                                                                          
 * The code includes helpfull comments for your understanding.
 * The Project Includes a port.txt file with the common communication ports,where you can find and see which protocol or service uses the specific port,you can add more from your researches!
+
+![s1](https://user-images.githubusercontent.com/83230070/128787546-d1330a54-b1f7-42ae-9e8e-39ea92dd66c3.png)
