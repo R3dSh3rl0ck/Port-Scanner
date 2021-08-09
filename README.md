@@ -12,5 +12,5 @@
                                                                 [--> pip install IPy # (if you do not have pip installed --> python get-pip.py (Windows))]
                                                                                                          
 * For colorama Library --> pip install colorama (Windows) , pip3 install colorama (Debian).                                                                                          
-* The code includes helpfull comments for your undestanding.
+* The code includes helpfull comments for your understanding.
 * The Project Includes a port.txt file with the common communication ports,where you can find and see which protocol or service uses the specific port,you can add more from your researches!
